@@ -1,4 +1,5 @@
 import random
+#Esse código verifica se um CPF está correto de acordo com o algoritmo de criação de CPFs da Receita Federal
 #funções
 def verificador_1(cpf:str) -> bool:
     """Analisa o cpf e verifica se o 1º dígito
@@ -72,7 +73,6 @@ def gerar_cpf() -> str:
         cpf += str(verif)
 
     cpf = cpf[:3] + '.' + cpf[3:6] + '.' + cpf[6:9] + '-' + cpf[9:]
-
     return cpf
 
 #main
